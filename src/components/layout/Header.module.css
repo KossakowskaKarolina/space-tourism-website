@@ -1,0 +1,96 @@
+.logo {
+  margin-top: 42px;
+  margin-left: 40px;
+}
+
+.line {
+  background: #F2F2F2;
+  height: 1px;
+  margin-top: 65px;
+}
+
+.navbar {
+  background: #979797;
+  /* backdrop-filter: blur(5px);  it is not blur, what is it then */
+  height: 96px;
+  padding: 38px;
+  position: absolute;
+  top: 40px;
+  width: 60%;
+  opacity: 0.9;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.numbers {
+  font-weight: bold;
+  margin-right: 13px;
+}
+
+a {
+  color: var(--main-light);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: 19px;
+  margin: 0 auto;
+}
+
+/* Screen */
+
+@media screen and (min-width: 901px) {
+  .line {
+    width: 473px; /* fix line width and visibility over navbar, maybe ::after */
+  }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+  .header {
+    margin-top: 0;
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .navbar {
+    top: 0;
+  }
+
+  .numbers {
+    display: none;
+  }
+
+  a {
+    font-size: 17px;
+    padding-right: 3px;
+  }
+
+  a:last-of-type {
+    padding-right: 0;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-top: 0px;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
