@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 901px) {
   .body {
-    background: url('../../../assets/home/background-home-desktop.jpg') fixed no-repeat;
+    background: url('../../../assets/crew/background-crew-desktop.jpg') fixed no-repeat;
     background-size: cover;
     height: 100vh;
   }
@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 901px) {
   .body {
-    background: url('../../../assets/home/background-home-tablet.jpg') fixed no-repeat;
+    background: url('../../../assets/crew/background-crew-tablet.jpg') fixed no-repeat;
     background-size: cover;
   }
 }
@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 600px) {
   .body {
-    background: url('../../../assets/home/background-home-mobile.jpg') fixed no-repeat;
+    background: url('../../../assets/crew/background-crew-mobile.jpg') fixed no-repeat;
     background-size: cover;
   }
 }

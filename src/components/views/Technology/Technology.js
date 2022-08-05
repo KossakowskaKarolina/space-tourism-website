@@ -1,13 +1,14 @@
 import React from "react";
-import styles from './Home.module.css';
+import styles from './Technology.module.css';
 
 import MainLayout from "../../layout/MainLayout";
 
-const Home = () => (
+const Technology = props => {
+  return (
     <div className={styles.body}>
       <MainLayout />
     </div>
   )
+}
 
-
-export default Home;
+export default Technology;

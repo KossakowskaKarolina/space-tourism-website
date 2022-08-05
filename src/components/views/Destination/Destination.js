@@ -1,13 +1,14 @@
 import React from "react";
-import styles from './Home.module.css';
+import styles from './Destination.module.css';
 
 import MainLayout from "../../layout/MainLayout";
 
-const Home = () => (
+const Destination = props => {
+  return(
     <div className={styles.body}>
       <MainLayout />
     </div>
   )
+}
 
-
-export default Home;
+export default Destination;
