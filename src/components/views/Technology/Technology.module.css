@@ -7,13 +7,13 @@
     height: 100vh;
   }
 }
-
 /* Tablet */
 
 @media screen and (max-width: 901px) {
   .body {
     background: url('../../../assets/technology/background-technology-tablet.jpg') fixed no-repeat;
     background-size: cover;
+    height: 100vh;
   }
 }
 
@@ -23,5 +23,6 @@
   .body {
     background: url('../../../assets/technology/background-technology-mobile.jpg') fixed no-repeat;
     background-size: cover;
+    height: 100vh;
   }
 }
