@@ -1,23 +1,25 @@
+/* Common */
+
 .logo {
-  margin-top: 42px;
+  margin-top: 62px;
   margin-left: 40px;
 }
 
 .line {
   background: #F2F2F2;
   height: 1px;
-  margin-top: 65px;
+  margin-top: 85px;
+  width: 473px; /* fix line width and visibility over navbar, maybe ::after */
+
 }
 
 .navbar {
-  background: #979797;
-  /* backdrop-filter: blur(5px);  it is not blur, what is it then */
+  background: #262a33;
   height: 96px;
   padding: 38px;
   position: absolute;
   top: 40px;
   width: 60%;
-  opacity: 0.9;
 }
 
 .links {
@@ -34,7 +36,7 @@
 
 a {
   color: var(--main-light);
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   text-transform: uppercase;
   font-size: 19px;
   margin: 0 auto;
@@ -43,21 +45,15 @@ a {
 /* Screen */
 
 @media screen and (min-width: 901px) {
-  .line {
-    width: 473px; /* fix line width and visibility over navbar, maybe ::after */
-  }
+
 }
 
 /* Tablet */
 
 @media screen and (max-width: 900px) {
-  .header {
-    margin-top: 0;
-  }
-
   .logo {
-    margin-top: 0;
-    margin-left: 20px;
+    margin-top: 24px;
+    margin-left: 40px;
   }
 
   .line {
@@ -86,7 +82,8 @@ a {
 
 @media screen and (max-width: 600px) {
   .logo {
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   .line {

@@ -7,7 +7,7 @@ import { ReactComponent as Logo } from '../../assets/shared/logo.svg';
 // import { ReactComponent as Hamburger } from '../../assets/shared/icon-hamburger.svg'
 
 const Header = () => (
-  <Grid container mt={3} className={styles.header}>
+  <Grid container>
     <Grid item sm={1} xs={2}>
       <Logo className={styles.logo}/>
     </Grid>
