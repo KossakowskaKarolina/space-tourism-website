@@ -18,11 +18,12 @@ const Header = () => (
     {/*<Hamburger /> figure out hamburger menu*/}
       <Box className={styles.navbar}>
         <Box className={styles.links}>
-        <Link to='/'><span className={styles.numbers}>00</span>Home</Link>
-        <Link to='/destination'><span className={styles.numbers}>01</span>Destination</Link>
-        <Link to='/crew'><span className={styles.numbers}>02</span>Crew</Link>
-        <Link to='/technology'><span className={styles.numbers}>03</span>Technology</Link>
-      </Box></Box>
+          <Link to='/'><span className={styles.numbers}>00</span>Home</Link>
+          <Link to='/destination'><span className={styles.numbers}>01</span>Destination</Link>
+          <Link to='/crew'><span className={styles.numbers}>02</span>Crew</Link>
+          <Link to='/technology'><span className={styles.numbers}>03</span>Technology</Link>
+        </Box>
+      </Box>
     </Grid>
   </Grid>
 )
