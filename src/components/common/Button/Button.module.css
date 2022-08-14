@@ -1,0 +1,58 @@
+button {
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  position: relative;
+}
+
+button::before {
+  content: '';
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  background-color: #979797;
+  position: absolute;
+	z-index: -1;
+  top: 135px;
+  left: 135px;
+  transform: translate(-50%, -50%);
+}
+
+/* Why this hover works on button, not on before? */
+/* Add specific values for tablet and mobile*/
+button:hover::before {
+  height: 450px;
+  width: 450px;
+	transition: 2s;
+}
+
+
+/* Screen */
+
+@media screen and (min-width: 901px) {
+  button {
+    height: 274px;
+    width: 274px;
+    font-size: 37px;
+  }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+  button {
+    height: 242px;
+    width: 242px;
+    font-size: 37px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+  button {
+    height: 150px;
+    width: 150px;
+    font-size: 23px;
+  }
+}
