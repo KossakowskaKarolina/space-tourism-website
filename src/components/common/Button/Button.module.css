@@ -1,5 +1,6 @@
 button {
   border-radius: 50%;
+  border: none;
   text-transform: uppercase;
   font-family: var(--font-secondary);
   position: relative;
