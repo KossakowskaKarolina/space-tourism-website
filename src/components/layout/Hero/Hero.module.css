@@ -1,0 +1,41 @@
+h1 {
+  font-family: var(--font-secondary);
+  color: var(--main-light);
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: lighter;
+}
+
+
+/* Screen */
+
+@media screen and (min-width: 901px) {
+  .hero {
+    margin-top: 230px;
+  }
+
+  .box {
+    width: 490px;
+    padding-left: 120px;
+  }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 901px) {
+  .hero {
+    margin-top: 105px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+  .hero {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+}
