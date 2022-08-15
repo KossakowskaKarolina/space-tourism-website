@@ -1,8 +1,8 @@
 import React from "react";
 import styles from './BodyText.module.css'
 
-const BodyText = props => (
-  <p>{props.text}</p>
+const BodyText = ({text}) => (
+  <p>{text}</p>
 )
 
 export default BodyText;
