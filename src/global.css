@@ -14,7 +14,7 @@ body {
   --main: #D0D6F9;
   --main-light: #FFFFFF;
   --font-primary: 'Barlow Condensed', sans-serif;
-  --font-secondary: 'Bellefair', serif;
+  --font-secondary: 'Bellefair regular', serif;
 }
 
 a, a:hover, a:visited {
