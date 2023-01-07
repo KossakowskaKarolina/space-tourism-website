@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './Technology.module.css';
 
-import MainLayout from "../../layout/MainLayout";
+import MainLayout from "../../layout/MainLayout/MainLayout";
 
 const Technology = props => {
   return (

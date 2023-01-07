@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './Destination.module.css';
 
-import MainLayout from "../../layout/MainLayout";
+import MainLayout from "../../layout/MainLayout/MainLayout";
 import TitleText from "../../common/TitleText/TitleText";
 import DestinationBox from "../../layout/DestinationBox/DestinationBox";
 

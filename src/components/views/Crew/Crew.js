@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './Crew.module.css';
 
-import MainLayout from "../../layout/MainLayout";
+import MainLayout from "../../layout/MainLayout/MainLayout";
 
 const Crew = props => {
   return(

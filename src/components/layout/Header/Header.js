@@ -3,7 +3,7 @@ import { Grid, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import styles from './Header.module.css';
-import { ReactComponent as Logo } from '../../assets/shared/logo.svg';
+import { ReactComponent as Logo } from '../../../assets/shared/logo.svg';
 // import { ReactComponent as Hamburger } from '../../assets/shared/icon-hamburger.svg'
 
 const Header = () => (
