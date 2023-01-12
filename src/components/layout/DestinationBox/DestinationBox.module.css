@@ -1,0 +1,39 @@
+/* Common */
+
+.destination_container {
+  width: 100%;
+  padding: 0 130px;
+}
+
+.heading {
+  font-size: 100px;
+  font-family: var(--font-secondary);
+  color: var(--main-light);
+  font-weight: 100;
+  font-variant: all-small-caps;
+  letter-spacing: 8px;
+}
+
+destination_text {
+  text-align: justify;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #979797;
+  margin: 18px 0;
+}
+
+.subheading {
+  font-size: 14px;
+  color: var(--main);
+  letter-spacing: 2.36px;
+}
+
+.subheading_text {
+  font-size: 28px;
+  font-family: var(--font-secondary);
+  color: var(--main-light);
+  font-weight: 100;
+  font-variant: all-small-caps;
+}
