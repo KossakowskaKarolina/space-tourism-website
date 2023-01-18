@@ -1,3 +1,46 @@
+.destination_title {
+  font-size: 20px;
+  padding: 0 0 40px 130px;
+  font-weight: 100;
+}
+
+.container {
+  width: 100%;
+  padding: 0 130px;
+}
+
+.tabs {
+  display: inline;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+.tabButton {
+  display: inline;
+  color: var(--main);
+  width: fit-content;
+  height: 19px;
+  font-family: var(--font-primary);
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-right: 25px;
+  padding-bottom: 10px;
+}
+
+.tabButton:hover {
+  border-bottom: 2px solid var(--main);
+  cursor: pointer;
+}
+
+.tabActive {
+  color: var(--main-light);
+  border-bottom: 2px solid var(--main-light);
+  outline: none;
+  
+}
+
+
 /* Screen */
 
 @media screen and (min-width: 901px) {
