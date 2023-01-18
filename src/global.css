@@ -25,4 +25,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h5 {
+  font-family: var(--font-primary);
+  color: var(--main-light);
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+}
 
