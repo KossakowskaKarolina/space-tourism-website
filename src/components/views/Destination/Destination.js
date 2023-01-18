@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './Destination.module.css';
-import { Tab } from '@mui/material';
-import { TabContext, TabList, TabPanel } from '@mui/lab';
+import { Grid } from '@mui/material';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import MainLayout from "../../layout/MainLayout/MainLayout";
 import TitleText from "../../common/TitleText/TitleText";
@@ -10,11 +10,6 @@ import DestinationBox from "../../layout/DestinationBox/DestinationBox";
 import data from '../../../data.json';
 
 const Destination = () => {
-  const [value, setValue] = useState('Moon');
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   let [moon, mars, europa, titan] = data.destinations;
   let newData = data.destinations;
@@ -22,15 +17,19 @@ const Destination = () => {
   return (
     <div className={styles.body}>
       <MainLayout />
-      <TitleText text='01' otherText='Pick your destination' />
-      <TabContext value={value}>
-        <TabList onChange={handleChange}>
-          <Tab label={moon.name} value="Moon" />
-          <Tab label={mars.name} value="Mars" />
-          <Tab label={europa.name} value="Europa" />
-          <Tab label={titan.name} value="Titan" />
-        </TabList>
-
+      <TitleText className={styles.destination_title} text='01' otherText='Pick your destination' />
+      <Tabs selectedTabClassName={styles.tabActive}>
+        <Grid container className={styles.container}>
+          <Grid item xs={12} md={7}></Grid>
+          <Grid item xs={12} md={5}>
+            <TabList className={styles.tabs} >
+              <Tab value={moon.name} className={styles.tabButton} >{moon.name}</Tab>
+              <Tab value={mars.name} className={styles.tabButton}>{mars.name}</Tab>
+              <Tab value={europa.name} className={styles.tabButton}>{europa.name}</Tab>
+              <Tab value={titan.name} className={styles.tabButton}>{titan.name}</Tab>
+            </TabList>
+          </Grid>
+        </Grid>
         {newData.map(item => 
           <TabPanel key={item.name} value={item.name}>
           <DestinationBox 
@@ -42,7 +41,7 @@ const Destination = () => {
           />
           </TabPanel>
        )}
-      </TabContext> 
+      </Tabs>
     </div>
   )
 }
