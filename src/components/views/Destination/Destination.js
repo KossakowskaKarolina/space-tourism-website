@@ -6,6 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import MainLayout from "../../layout/MainLayout/MainLayout";
 import TitleText from "../../common/TitleText/TitleText";
 import DestinationBox from "../../layout/DestinationBox/DestinationBox";
+import Image from "../../common/Image/Image";
 
 import data from '../../../data.json';
 
@@ -22,7 +23,7 @@ const Destination = () => {
         <Grid container className={styles.container}>
           <Grid item xs={12} md={7}></Grid>
           <Grid item xs={12} md={5}>
-            <TabList className={styles.tabs} >
+            <TabList className={styles.tabs}>
               <Tab value={moon.name} className={styles.tabButton} >{moon.name}</Tab>
               <Tab value={mars.name} className={styles.tabButton}>{mars.name}</Tab>
               <Tab value={europa.name} className={styles.tabButton}>{europa.name}</Tab>
@@ -31,16 +32,23 @@ const Destination = () => {
           </Grid>
         </Grid>
         {newData.map(item => 
-          <TabPanel key={item.name} value={item.name}>
-          <DestinationBox 
-            image={item.images.png}
-            name={item.name}
-            description={item.description}
-            distance={item.distance}
-            travel={item.travel}
-          />
+          <TabPanel value={item.name} key={item.name}>
+            <Grid container className={styles.container}>
+              <Grid item xs={12} md={6}>
+                <Image image={item.images.png} alt={`${item.name} image`}/>
+              </Grid>
+              <Grid item xs={0} md={1}></Grid>
+              <Grid item xs={12} md={5}>
+                <DestinationBox 
+                  name={item.name}
+                  description={item.description}
+                  distance={item.distance}
+                  travel={item.travel}
+                />
+              </Grid>
+            </Grid>
           </TabPanel>
-       )}
+        )}
       </Tabs>
     </div>
   )
