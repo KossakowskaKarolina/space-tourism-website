@@ -1,12 +1,7 @@
 /* Common */
 
-.destination_container {
-  width: 100%;
-  padding: 0 130px;
-}
-
 .heading {
-  font-size: 100px;
+  font-size: 115px;
   font-family: var(--font-secondary);
   color: var(--main-light);
   font-weight: 100;
@@ -21,7 +16,7 @@
 .divider {
   width: 100%;
   border-bottom: 1px solid #979797;
-  margin: 18px 0;
+  margin: 54px 0 18px 0;
 }
 
 .subheading {

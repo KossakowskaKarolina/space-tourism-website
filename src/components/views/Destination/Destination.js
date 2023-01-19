@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import MainLayout from "../../layout/MainLayout/MainLayout";
 import TitleText from "../../common/TitleText/TitleText";
-import DestinationBox from "../../layout/DestinationBox/DestinationBox";
+import Box from "../../layout/Box/Box";
 import Image from "../../common/Image/Image";
 
 import data from '../../../data.json';
@@ -38,7 +38,7 @@ const Destination = () => {
               </Grid>
               <Grid item xs={0} md={1}></Grid>
               <Grid item xs={12} md={5}>
-                <DestinationBox 
+                <Box 
                   name={item.name}
                   description={item.description}
                   distance={item.distance}
