@@ -24,10 +24,9 @@ const Destination = () => {
           <Grid item xs={12} md={7}></Grid>
           <Grid item xs={12} md={5}>
             <TabList className={styles.tabs}>
-              <Tab value={moon.name} className={styles.tabButton} >{moon.name}</Tab>
-              <Tab value={mars.name} className={styles.tabButton}>{mars.name}</Tab>
-              <Tab value={europa.name} className={styles.tabButton}>{europa.name}</Tab>
-              <Tab value={titan.name} className={styles.tabButton}>{titan.name}</Tab>
+              {newData.map(item =>
+                <Tab key={item.name} value={item.name} className={styles.tabButton} >{item.name}</Tab>
+              )}
             </TabList>
           </Grid>
         </Grid>
