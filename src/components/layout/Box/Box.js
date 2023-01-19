@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { Grid } from '@mui/material';
 
 import styles from './Box.module.css';
@@ -22,6 +23,14 @@ const Box = (props) => {
       </Grid>
     </div>
   )
+}
+
+Box.propTypes = {
+  introHeading: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  distance: PropTypes.string,
+  travel: PropTypes.string,
 }
 
 export default Box;
