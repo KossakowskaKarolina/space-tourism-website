@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from './Destination.module.css';
 import { Grid } from '@mui/material';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -11,14 +11,12 @@ import Image from "../../common/Image/Image";
 import data from '../../../data.json';
 
 const Destination = () => {
-
-  let [moon, mars, europa, titan] = data.destinations;
   let newData = data.destinations;
 
   return (
     <div className={styles.body}>
       <MainLayout />
-      <TitleText className={styles.destination_title} text='01' otherText='Pick your destination' />
+      <TitleText className={styles.title} text='01' otherText='Pick your destination' />
       <Tabs selectedTabClassName={styles.tabActive}>
         <Grid container className={styles.container}>
           <Grid item xs={12} md={7}></Grid>
@@ -38,7 +36,7 @@ const Destination = () => {
               </Grid>
               <Grid item xs={0} md={1}></Grid>
               <Grid item xs={12} md={5}>
-                <Box 
+                <Box divider
                   name={item.name}
                   description={item.description}
                   distance={item.distance}
