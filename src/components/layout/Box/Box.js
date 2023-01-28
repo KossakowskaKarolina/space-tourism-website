@@ -5,9 +5,9 @@ import { Grid } from '@mui/material';
 import styles from './Box.module.css';
 
 const Box = (props) => {
-  return (
-    <div className={styles.destination_container}>
-      <h3 className={styles.intro_heading}>{props.introHeading}</h3>
+  if (props.divider){
+    return (
+    <div>
       <h2 className={styles.heading}>{props.name}</h2>
       <p className={styles.destination_text}>{props.description}</p>
       <div className={styles.divider}/>
@@ -23,6 +23,15 @@ const Box = (props) => {
       </Grid>
     </div>
   )
+  } else{
+    return(
+      <div>
+        <h3 className={styles.intro_heading}>{props.introHeading}</h3>
+        <h2 className={styles.heading}>{props.name}</h2>
+        <p className={styles.destination_text}>{props.description}</p>
+      </div>
+    )
+  }
 }
 
 Box.propTypes = {
