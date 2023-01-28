@@ -27,7 +27,7 @@ const Box = (props) => {
     return(
       <div>
         <h3 className={styles.intro_heading}>{props.introHeading}</h3>
-        <h2 className={styles.heading}>{props.name}</h2>
+        <h2 className={styles.heading_smaller}>{props.name}</h2>
         <p className={styles.destination_text}>{props.description}</p>
       </div>
     )
