@@ -17,25 +17,26 @@ let newData = data.crew;
     <div className={styles.body}>
       <MainLayout />
       <TitleText className={styles.title} text='02' otherText='Meet your crew'></TitleText>
-      <Tabs selectedTabClassName={styles.tabActive}>
+      <Tabs className={styles.tabs_box} selectedTabClassName={styles.tabActive}>
         {newData.map(item => 
           <TabPanel key={item.name} value={item.name}>
             <Grid container className={styles.container}>
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={5}>
                 <Box 
                   introHeading={item.role}
                   name={item.name}
                   description={item.bio}
                 />
               </Grid>
-              <Grid item xs={12} md={6}>
-                <Image image={item.images.png} alt={`${item.name} image`}/>
+              <Grid item xs={0} md={2}></Grid>
+              <Grid item xs={12} md={5}>
+                <Image image={item.images.png} alt={`${item.name} image`} className={styles.crew_image}/>
               </Grid>
             </Grid>
           </TabPanel>)}
           <TabList className={styles.tabs}>
               {newData.map(item =>
-                <Tab key={item.name} value={item.name} />
+                <Tab key={item.name} value={item.name} className={styles.tabButton} />
               )}
             </TabList>
       </Tabs>

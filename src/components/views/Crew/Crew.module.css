@@ -1,3 +1,43 @@
+.title {
+  font-size: 20px;
+  padding: 0 0 40px 130px;
+  font-weight: 100;
+}
+
+.container {
+  width: 100%;
+  padding: 0 130px;
+  margin-top: 50px;
+  height: 300px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.tabs_box {
+  position: relative;
+}
+
+.tabs {
+  color: #979797;
+  display: flex;
+  margin-left: 100px;
+}
+
+.tabButton {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.tabButton:hover {
+  color: var(--main);
+}
+
+.tabActive {
+  color: var(--main-light);
+}
+
 /* Screen */
 
 @media screen and (min-width: 901px) {
@@ -6,6 +46,11 @@
     background-size: cover;
     height: 100vh;
   }
+  
+  .crew_image {
+    position: fixed;
+    bottom: 0;
+}
 }
 
 /* Tablet */
