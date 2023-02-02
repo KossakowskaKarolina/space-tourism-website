@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import styles from './Box.module.css';
 import { Grid } from '@mui/material';
 
-import styles from './Box.module.css';
+import BodyText from '../../common/BodyText/BodyText';
 
 const Box = (props) => {
   if (props.divider){
     return (
     <div>
       <h2 className={styles.heading}>{props.name}</h2>
-      <p className={styles.destination_text}>{props.description}</p>
+      <BodyText text={props.description}></BodyText>
       <div className={styles.divider}/>
       <Grid container>
         <Grid item xs={12} md={6}>
@@ -28,7 +29,7 @@ const Box = (props) => {
       <div>
         <h3 className={styles.intro_heading}>{props.introHeading}</h3>
         <h2 className={styles.heading_smaller}>{props.name}</h2>
-        <p className={styles.destination_text}>{props.description}</p>
+        <BodyText text={props.description}></BodyText>
       </div>
     )
   }
