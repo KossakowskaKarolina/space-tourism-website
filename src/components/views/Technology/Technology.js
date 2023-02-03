@@ -23,7 +23,7 @@ const Technology = () => {
           <Grid item md={2}>
             <TabList className={styles.tabs}>
               {newData.map(item =>
-                <Tab key={item.name} value={item.name} className={styles.tabButton} >{item.name}</Tab>
+                <Tab key={item.name} value={item.name} className={styles.tabButton} >{newData.indexOf(item)+1}</Tab>
               )}
             </TabList>
           </Grid>
@@ -39,8 +39,8 @@ const Technology = () => {
                     />
                 </Grid>
                 <Grid item md={1}></Grid>
-                <Grid item md={5}>
-                  <Image image={item.images.portrait} alt={`${item.name} image`}/>
+                <Grid item md={6} className={styles.image_container}>
+                  <Image image={item.images.portrait} alt={`${item.name} image`} className={styles.technology_image}/>
                 </Grid>
               </Grid>
             </TabPanel>
