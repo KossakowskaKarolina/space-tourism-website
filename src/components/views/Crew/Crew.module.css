@@ -23,6 +23,7 @@ h3 {
   color: #979797;
   display: flex;
   margin-left: 100px;
+  cursor: pointer;
 }
 
 .tabButton {
@@ -50,7 +51,7 @@ h3 {
   .crew_image {
     position: fixed;
     bottom: 0;
-}
+  }
 }
 
 /* Tablet */
