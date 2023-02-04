@@ -23,11 +23,20 @@
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  border: 0.5px solid var(--main-light);
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
   text-align: center;
   line-height: 70px;
   font-size: 32px;
   font-family: var(--font-primary);
+}
+
+.tabButton:hover {
+  border: 0.7px solid var(--main-light)
+}
+
+.tabActive {
+  color: var(--main-dark) ;
+  background: var(--main-light)
 }
 
 .subheading {
