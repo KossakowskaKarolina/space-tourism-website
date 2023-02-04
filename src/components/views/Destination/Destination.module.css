@@ -1,4 +1,4 @@
-.destination_title {
+.title {
   font-size: 20px;
   padding: 0 0 40px 130px;
   font-weight: 100;
@@ -37,8 +37,12 @@
   color: var(--main-light);
   border-bottom: 2px solid var(--main-light);
   outline: none;
-  
 }
+
+.destination_image {
+  animation: imageAnimation 60s linear 0s infinite reverse none;
+}
+
 
 
 /* Screen */
@@ -68,5 +72,11 @@
     background: url('../../../assets/destination/background-destination-mobile.jpg') fixed no-repeat;
     background-size: cover;
     height: 100vh;
+  }
+}
+
+@keyframes imageAnimation{
+  0% {
+    transform:  rotate(360deg);
   }
 }

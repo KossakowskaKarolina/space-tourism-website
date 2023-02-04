@@ -32,7 +32,7 @@ const Destination = () => {
           <TabPanel value={item.name} key={item.name}>
             <Grid container className={styles.container}>
               <Grid item xs={12} md={6}>
-                <Image image={item.images.png} alt={`${item.name} image`}/>
+                <Image image={item.images.png} alt={`${item.name} image`} className={styles.destination_image}/>
               </Grid>
               <Grid item xs={0} md={1}></Grid>
               <Grid item xs={12} md={5}>
