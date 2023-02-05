@@ -6,27 +6,10 @@ button {
   position: relative;
 }
 
-button::before {
-  content: '';
-  height: 270px;
-  width: 270px;
-  border-radius: 50%;
-  background-color: #979797;
-  position: absolute;
-	z-index: -1;
-  top: 135px;
-  left: 135px;
-  transform: translate(-50%, -50%);
-}
-
-/* Why this hover works on button, not on before? */
-/* Add specific values for tablet and mobile*/
-button:hover::before {
-  height: 450px;
-  width: 450px;
+button:hover{
+  box-shadow: 0px 0px 0px 80px #3f3e3e;
 	transition: 2s;
 }
-
 
 /* Screen */
 
